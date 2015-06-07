@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Reset JP*/
+.box {
+	display:block;
+	height:auto;
+	overflow:hidden;
+}
+@mixin box {
+	display:block;
+	height:auto;
+	overflow:hidden;
+}
+.fleft {
+	float:left;
+}
+.fright {
+	float:right;
+}
+.fcenter {
+	margin:0 auto;
+}
+.fwidth {
+	width:100%;
+}
+p, a {
+	margin:0;
+	padding:0;
+}
+.text-center {
+  text-align:center;
+}
+.text-left {
+  text-align:left;
+}
+.text-right {
+  text-align:right;
+}
+a {
+	text-decoration:none;
+}
+.ocultar {
+	display:none;
+	visibility:hidden;
+}
+.mostrar {
+	display:block;
+	visibility:visible;
+}
+.no-column {
+	padding-left:0;
+	padding-right:0;
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
+	margin:0;
+	padding:0;
+	font-family:"letter-gothic-std";
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	text-rendering: optimizeLegibility !important;
+	background:#041621;
+}
+#center {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	width:1024px;
+	height:670px;
+}
+
+#center p{
+	display:block;
+	width:100%;
+	float:left;
+	font-size:14px;
+	color:#e8e3d9;
+	margin-bottom:10px;
+	font-weight:700;
+	line-height:16px;
+}
+@media (max-width: 750px) {
+	#center p{
+		font-size:12px;
+	}
+}
+@media only screen and (max-device-width: 750px) {
+	#center p{
+		font-size:12px;
+	}
+}
+
+#center p span {
+	font-weight:400;
+}
+.logo {
+	display:block;
+	width:320px;
+	height:320px;
+	position:relative;
+	border-radius:50%;
+	
+	background: linear-gradient(217deg, #842f89, #ff9821, #842f89, #ff9821);
+	background-size: 300% 300%;
+	-webkit-animation: bglogo 30s ease infinite;
+	-moz-animation: bglogo 30s ease infinite;
+	animation: bglogo 30s ease infinite;
+}
+
+@-webkit-keyframes bglogo {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@-moz-keyframes bglogo {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@keyframes bglogo { 
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+.tipologo{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:320px;
+	height:320px;
+	background-image:url(img/stir_logomark-2.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.invite p {
+	padding-top:10px;
+}
+#redes a {
+	display:block;
+	float:left;
+	height:auto;
+	width:auto;
+	transform:scale(.7,.7);
+	border-radius:0!important;
+}
+#redes a i, #redes a span{
+	border-radius:0!important;
+}
+#redes a span i{
+	color:#000;
+	background-color:#c2bfb8;
+}
+.disclaimer {
+	border-top:1px solid #cfc9c4;
+	padding-top:10px;
+	margin-top:20px;
+}
+.disclaimer p {
+	font-size:11px!important;	
+}
+
+@media (max-width: 1024px) {
+	#center {
+		width:99%;
+		height:600px;
+		padding-top:10px;
+	}
+}
+@media only screen and (max-device-width: 1024px) {
+	#center {
+		width:99%;
+		height:600px;
+		padding-top:10px;
+	}
+}
+@media (max-width: 768px) {
+	#center {
+		height:auto;
+	}
+}
+@media only screen and (max-device-width: 768px) {
+	#center {
+		height:auto;
+	}
+}
