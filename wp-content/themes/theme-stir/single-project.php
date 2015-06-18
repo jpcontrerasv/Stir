@@ -183,7 +183,7 @@
                 <div class="table">
                     <div class="table-cell">
                         <h1>Help Stir support <?php the_title();?></h1>
-                        <p>By purchasing one of the following options you are both helping the Stir platform and providing additional resources to this project. <br>For each dollar you spend, we will give 75c to the creator of this project.</p>
+                        <p>By purchasing one of the following options you are both helping the Stir platform and providing additional resources to this project. <br>For each dollar you spend (excluding shipping charges), we will give 75c to the creator of this project.</p>
                     </div>
                 </div>
             </div>
@@ -195,12 +195,12 @@
                             <h2>$10</h2>
                             <p class="rewards-title">You will receive:</p>
                             <ul>
-                                <li>-<a href="#">Project Stickers</a></li>
+                                <li>-High quality vinyl <a href="#">Stir sticker</a></li>
                                 <li>-Your name as Project Supporter</li>
                             </ul>
                             <a class="donation-button" data-donate="10aud" data-item="<?php the_title();?>" data-id="<?php echo get_the_ID();?>" href="#">Purchase with pickup <br><i class="fa fa-bicycle fa-lg"></i></a>
                             <a class="donation-button" data-donate="10auds" data-item="<?php the_title();?>" data-id="<?php echo get_the_ID();?>"  href="#">Purchase with shipping <br><i class="fa fa-truck fa-lg"></i></a>
-                            <p class="notice">If you would like to receive your purchase in the mail, we will add $12 in P&amp;P.<br> You will be redirected to PayPal.</p>
+                            <p class="notice">Pickup from CBRIN, Level 5, 1 Moore St, Canberra. Shipping to a nominated Australian address adds $12 in P&amp;P.</p>
                         </div>
                     </div>
                 </div>
@@ -210,13 +210,13 @@
                             <h2>$20</h2>
                             <p class="rewards-title">You will receive</p>
                             <ul>
-                                <li>-<a href="#">Project Stickers</a></li>
+                                <li>-High quality vinyl <a href="#">Stir sticker</a></li>
                                 <li>-A wonderful <a href="#">Stir mug</a></li>
                                 <li>-Your name as Project Supporter</li>
                             </ul>
                             <a class="donation-button" data-donate="20aud" data-item="<?php the_title();?>" data-id="<?php echo get_the_ID();?>" href="#">Purchase with pickup <br><i class="fa fa-bicycle fa-lg"></i> </a>                            
                             <a class="donation-button" data-donate="20auds" data-item="<?php the_title();?>" data-id="<?php echo get_the_ID();?>" href="#">Purchase with shipping <br><i class="fa fa-truck fa-lg"></i> </a>
-                            <p class="notice">If you would like to receive your purchase in the mail, we will add $12 in P&amp;P.<br> You will be redirected to PayPal.</p>
+                            <p class="notice">Pickup from CBRIN, Level 5, 1 Moore St, Canberra. Shipping to a nominated Australian address adds $12 in P&amp;P.</p>
                         </div>
                     </div>
                 </div>
@@ -226,14 +226,14 @@
                             <h2>$50</h2>
                             <p class="rewards-title">You will receive:</p>
                             <ul>
-                                <li>-<a href="#">Project Stickers</a></li>
-                                <li>-A wonderful <a href="#">Stir mug</a></li>
+                                <li>-High quality vinyl <a href="#">Stir sticker</a></li>
+                                <li>-A limited edition <a href="#">Stir mug</a></li>
                                 <li>-Your name as Project Supporter</li>
                                 <li>-Your name as Stir Supporter</li>
                             </ul>
                             <a class="donation-button" data-donate="50aud" data-item="<?php the_title();?>" data-id="<?php echo get_the_ID();?>" href="#">Purchase with pickup <br><i class="fa fa-bicycle fa-lg"></i></a>                            
                             <a class="donation-button" data-donate="50auds" data-item="<?php the_title();?>" data-id="<?php echo get_the_ID();?>" href="#">Purchase with shipping <br><i class="fa fa-truck fa-lg"></i></a>
-                            <p class="notice">If you would like to receive your purchase in the mail, we will add $12 in P&amp;P.<br> You will be redirected to PayPal.</p>
+                            <p class="notice">Pickup from CBRIN, Level 5, 1 Moore St, Canberra. Shipping to a nominated Australian address adds $12 in P&amp;P.</p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
         
         <div class="clearfix"></div>
         
-        <?php /*?><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-column">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-column">
             <?php 
              $aditional = get_order_field('visuals_project_aditional_photos');
              $imagen = get('visuals_project_display');
@@ -291,7 +291,7 @@
                 <?php   } ?>
                 </ul>
             </div>
-        </div><?php */?>
+        </div>
         
         
         
@@ -324,8 +324,8 @@
                 $user = get_user_by('id',$support->id_user);
             ?>
             <div class="info-sideabr col-lg-3 col-md-3 col-sm-12 col-xs-12 no-column">
-            	<div id="quotebox" class="box fwidth fleft bg-<?php echo $color;?>">
-                    <span class="small">What people are saying?</span>
+            	<div id="quotebox" class="box fwidth fleft ">
+                    <?php/* ?><span class="small">What people are saying?</span>
                     <blockquote>“<?echo $support->comment;?>” <br><br><?echo $support->age;?>/<?php echo ($support->sex==0)?'M':'F';?>/<?php echo $user->user_nicename;?></blockquote>
                 </div>
                 <div class="clearfix"></div>
@@ -335,21 +335,22 @@
                         <h3>what do people think?</h3>
                         <?php $stat_project = stat_project(get_the_ID(),get('detail_of_project_old_people')); ?>
                     </div>
+                    <?php */?>
                     
-                    <div class="votos col-lg-12 col-md-12 col-sm-12 col-xs-12 no-column text-left txt-<?php echo $color;?>">
+                    <?php/* ?><div class="votos col-lg-12 col-md-12 col-sm-12 col-xs-12 no-column text-left txt-<?php echo $color;?>">
                         <span class="total-market txt-<?php echo $color;?>"><?php echo round($stat_project["total_market_cool"]/$stat_project["count_project"]);?></span>/<span class="out-of txt-<?php echo $color;?>">5</span>
                         <div class="clearfix"></div>
                         <p class="txt-<?php echo $color;?>">cool</p><br>
-                        <?php /*?><span><?php echo round($stat_project["all_market_cool"]/$stat_project["count_all_project"]);?></span>/<span>5</span><?php */?>
                     </div>
+                    <?php */?>
                     
                     <div class="clearfix"></div>
                     
-                    <div class="votos col-lg-12 col-md-12 col-sm-12 col-xs-12 no-column text-left txt-<?php echo $color;?>">
+                    <?php /*?><div class="votos col-lg-12 col-md-12 col-sm-12 col-xs-12 no-column text-left txt-<?php echo $color;?>">
                         <span class="total-market txt-<?php echo $color;?>"><?php echo round($stat_project["total_market_clear"]/$stat_project["count_project"]);?></span>/<span class="out-of txt-<?php echo $color;?>">5</span>
                         <div class="clearfix"></div>
                         <p class="txt-<?php echo $color;?>">clear</p><br>
-                        <?php /*?><span><?php echo round($stat_project["all_market_clear"]/$stat_project["count_all_project"]);?></span>/<span>5</span><?php */?>
+                        <span><?php echo round($stat_project["all_market_clear"]/$stat_project["count_all_project"]);?></span>/<span>5</span>
                     </div>
                     <div class="clearfix"></div>
                     
@@ -357,12 +358,13 @@
                         <span class="total-market txt-<?php echo $color;?>"><?php echo round($stat_project["total_market_capable"]/$stat_project["count_project"]);?></span>/<span class="out-of txt-<?php echo $color;?>">5</span>
                         <div class="clearfix"></div>
                         <p class="txt-<?php echo $color;?>">capable</p><br> 
-                        <?php /*?><span><?php echo round($stat_project["all_market_capable"]/$stat_project["count_all_project"]);?></span>/<span>5</span><?php */?>
+                        <?php /*?><span><?php echo round($stat_project["all_market_capable"]/$stat_project["count_all_project"]);?></span>/<span>5</span>
                     </div>
+                    <?php */?>
                     <!--img src="<?php bloginfo('template_url'); ?>/img/graficos.png" alt=""-->
 				</div>
 
-                <div class="title-section box fleft">
+                <?php /* ?><div class="title-section box fleft">
                     <h3>how much would people pay?</h3>
                 </div>
                 <p>The average response from the target market is:</p>
@@ -370,13 +372,14 @@
                     FROM wp_project_support where id_project=".(int) get_the_ID()." GROUP by id_project order by repetidos desc",OBJECT);
                 ?>
                 <h4 class="price txt-<?php echo $color;?>">$<?php echo $support->support;?></h4><br>
+                <?php */ ?>
                 
                 <div class="clearfix"></div>
                 <div class="title-section box fleft">
                 <h3>Project Supporters</h3>
             </div>
             <div class="psupporters box fwidth fleft">
-                <p></p> 
+                <p><?php echo get_donate_project(get_the_ID());?></p> 
             </div>
                 
                 
@@ -486,8 +489,7 @@
     
 	<div id="sidebar-project" class="col-lg-3 col-md-2 col-sm-3 col-xs-12">
     	<div id="sticker" class="box fwidth fleft">
-
-
+        <?php /* ?>    
 	  <?php if ( is_user_logged_in() ) {
             $user = wp_get_current_user();
             $project_id = (int) get_the_ID();
@@ -499,6 +501,12 @@
                 <button class="link bg-<?php echo $color;?>">You have already shown your support for this project</button>
             <?php } ?>
       <?php ; } else{?>
+            <button class="link bg-<?php echo $color;?>">Register to Stir to Support this project</button>
+      <? } ?>
+      <?php */ ?>
+       <?php if ( is_user_logged_in() ) { ?>
+            <button class="support bg-<?php echo $color;?>">Help Stir Support This Project</button>
+      <? } else { ?>
             <button class="link bg-<?php echo $color;?>">Register to Stir to Support this project</button>
       <? } ?>
             

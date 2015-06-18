@@ -32,6 +32,9 @@
     <script src="<?php bloginfo('template_url'); ?>/js/app.js"></script>    
  
     <script type="text/javascript" charset="utf-8">
+        $(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
 	$(document).ready(function(){
 		$('ul.tabs li').click(function(){
 			var tab_id = $(this).attr('data-tab');

@@ -2,7 +2,8 @@
 	<?php if ( is_user_logged_in() ) { ?>
     
     <section id="welcome-logged" class="box fwidth fleft text-center" >
-    	<div class="bloq-cta col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+    	
+        <?php /* <div class="bloq-cta col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
         	<div class="table">
             	<div class="table-cell">
 			<?php   $current_user = wp_get_current_user();?>
@@ -27,20 +28,21 @@
             <?php } ?>
                 </div>
             </div>
-        </div>
-    	<div class="bloq-cta col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
+        </div> */ ?>
+        
+    	<div class="bloq-cta col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
         	<div class="table">
             	<div class="table-cell">
                     <i class="fa fa-thumbs-o-up fa-5x"></i>
                     <div class="clearfix"></div>
-                    <p>Or you can always help a friend.</p>
+                    <!--<p>Or you can always help a friend.</p>-->
                     <div class="clearfix"></div>
                 	<a href="<?php echo get_option('siteurl'); ?>/support" class="cta-button">Support a project</a>
                 </div>
             </div>
         </div>
         <div class="covervid-wrapper">
-            <video class="covervid-video" autoplay muted="muted" loop poster="img/video-fallback.png">
+            <video class="covervid-video" autoplay muted="muted" loop poster="img/video-fallback.png" preload="auto">
                 <source src="<?php bloginfo('template_url'); ?>/img/videos/StirWebsiteSml.webm" type="video/webm">
                 <source src="<?php bloginfo('template_url'); ?>/img/videos/StirWebsiteSml.mp4" type="video/mp4">
                 <source src="<?php bloginfo('template_url'); ?>/img/videos/StirWebsiteSml.ogv" type="video/ogv">
@@ -62,8 +64,8 @@
                         <ul class="slides">
                             <li><h1>If you are 15-30, live in the ACT, and have a passion you'd like to pursue, Stir is for you</h1></li>
                             <li><h1>Develop your project following a simple, step by step process. We'll help you with tools.</h1></li>
-                            <li><h1>Promote your project far and wide to capture people's support. Anyone can vote for your idea.</h1></li>
-                            <li><h1>On the first of June, the projects with the most supporters will receive a $1000 grant!</h1></li>
+                            <li><h1>Promote your project far and wide to capture people's support. Anyone can support your idea.</h1></li>
+                            
                         </ul>
                     </div>
                     <div class="clearfix"></div>
@@ -73,7 +75,7 @@
         </div>
         
         <div class="covervid-wrapper">
-            <video class="covervid-video" autoplay muted="muted" loop poster="img/video-fallback.png">
+            <video class="covervid-video" autoplay muted="muted" loop poster="img/video-fallback.png" preload="auto">
                 <source src="<?php bloginfo('template_url'); ?>/img/videos/StirWebsiteSml.webm" type="video/webm">
                 <source src="<?php bloginfo('template_url'); ?>/img/videos/StirWebsiteSml.mp4" type="video/mp4">
                 <source src="<?php bloginfo('template_url'); ?>/img/videos/StirWebsiteSml.ogv" type="video/ogv">
@@ -152,12 +154,12 @@
             <div class="clearfix"></div>
             <img src="<?php bloginfo('template_url'); ?>/img/register-vote-promote.png" alt="" />
             <div class="clearfix"></div>
-            <p>If you are not eligible for creating a project in Stir, you can still vote for your friends.</p>
+            <p>If you are not eligible for creating a project in Stir, you can still support your friends.</p>
             <div class="clearfix"></div>
             <?php if ( is_user_logged_in() ) { ?>
             <a href="<?php echo get_option('siteurl'); ?>/support" class="cta-button">Check the projects</a>
             <?php ; } else{?>
-            <a href="<?php echo get_option('siteurl'); ?>/register" class="cta-button">Register here and vote</a>
+            <a href="<?php echo get_option('siteurl'); ?>/register" class="cta-button">Register here and support</a>
             <? } ?>
         </div>
         <div class="tools col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">

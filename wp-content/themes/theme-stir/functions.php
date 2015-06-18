@@ -1848,3 +1848,23 @@ function MySwitchUser($output)
 
 }
 
+function get_donate_project($id) {
+	global $wpdb;
+	$id  = (int) $id;
+	$query = "SELECT wpr.*, wpo.post_title, wpo.ID as id_project FROM  {$wpdb->prefix}project_donate as wpr
+			  LEFT JOIN {$wpdb->prefix}posts as wpo ON wpr.id_project = wpo.ID
+			  WHERE wpo.ID = {$id}
+			  ORDER by wpr.id DESC";
+
+    $list_donate = null;
+	$donates = $wpdb->get_results($query,OBJECT);
+
+	
+	foreach($donates as $donate){
+		
+		$list_donate = ($list_donate == null)? $donate->payer_name: $list_donate.','.$donate->payer_name;	
+	}
+
+	return $list_donate;
+}
+

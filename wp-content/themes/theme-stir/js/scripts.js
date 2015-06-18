@@ -1,3 +1,24 @@
+$(".donation-button").click(function(){
+	
+	var i = $(this).data('id');
+	var u = $(this).data('donate');
+	var p = $(this).data('item');
+	var d = "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=leftbrain@implementimagination.com.au&item_name=Project "+p+
+	"&item_number="+i;
+	var s = 0;
+	var m = 10;
+	s = (u=="50auds"? 12:s); 
+	s = (u=="20auds"? 12:s);
+	s = (u=='10auds'? 2:s); 
+	m = (u=="50auds"|| u=="50aud" ?50:m);
+	m = (u=="20auds"|| u=="20aud" ?20:m);
+	m = (u=="10auds"|| u=="10aud" ?10:m);
+	d = d+"&amount="+m+"&currency_code=AUD&custom="+i;
+	d = (s!==0? d+"&return=http://causeastir.com.au/thank-you/&shipping="+s:d+"&address_override=1&country=AU&address1=CBRIN%2C+Level+5%2C+1+Moore+Street%2C+Canberra%2C+ACT+2601&city=Canberra&zip=2601");
+	
+	window.top.location=d;
+});
+//
 // Create the dropdown base
 $("<select />").appendTo("nav");
 

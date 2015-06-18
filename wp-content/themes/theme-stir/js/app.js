@@ -569,12 +569,11 @@ $(document).ready(function() {
 		    	if(code.state=="success"){
 
 		    		setTimeout(function() {
-
-		    			$mensaje.removeClass('success');
-
-					    $('#survey').removeClass('aparecido');
-
-						$('#survey').addClass('desaparecido');
+		    			window.location.href = window.location.href+"#support";
+		    			window.location.reload(true);
+		    			//$mensaje.removeClass('success');
+					    //$('#survey').removeClass('aparecido');
+						//$('#survey').addClass('desaparecido');
 
 					  }, 1000);
 
@@ -686,11 +685,17 @@ $(document).ready(function() {
 
 	setTimeout(function() {
         if (location.href.indexOf("#welcome") != -1) {
-        	$project.loading('show','Welcome to Stir');
+        	$project.loading('show','Welcome to Stir. Please go and check your e-mail to confirm your account.');
         	setTimeout(function() {
 				$project.loading('hide');	
 
-			},3000);
+			},10000);
+        } else if (location.href.indexOf("#support") != -1) {
+        	$project.loading('show','Thanks for your support!.');
+        	setTimeout(function() {
+				$project.loading('hide');	
+
+			},10000);
         }
     }, 1);
 

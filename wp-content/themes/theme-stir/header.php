@@ -49,7 +49,7 @@ echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
-  
+<?php /*?> <div id="preloader"></div><?php */?>  
 <header class="container-fluid">
     <div id="logo-head" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
         <a href="<?php echo get_option('siteurl'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-head-2.png" alt=""></a>
@@ -59,11 +59,14 @@ echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-10">
         <nav>
             <ul class="menu">
+                <?php /* ?>
                 <?php if ( is_user_logged_in() ) { ?>
                 <li><a href="<?php echo get_option('siteurl'); ?>/eligibility">Create</a></li>
                 <? } else { ?>
                 <li><a href="<?php echo get_option('siteurl'); ?>/register">Create</a></li>
                 <? }?>
+                <?php */ ?>
+
                 <li><a href="<?php echo get_option('siteurl'); ?>/support" <? if ( is_page(array('14','17','12','23','41','21','19')  ) ) { ?>target="_blank"<? } else { ?><? } ?>>Support</a></li>
                 <li><a href="<?php echo get_option('siteurl'); ?>/toolshed" <? if ( is_page(array('14','17','12','23','41','21','19')  ) ) { ?>target="_blank"<? } else { ?><? } ?>>Toolshed</a></li>
                 <li><a href="<?php echo get_option('siteurl'); ?>/About" <? if ( is_page(array('14','17','12','23','41','21','19')  ) ) { ?>target="_blank"<? } else { ?><? } ?>>About</a></li>

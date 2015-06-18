@@ -2,7 +2,7 @@
     
     <section id="thanks-page" class="box fwidth fleft text-center" >
     	<h1 id="thank-you-title" class="animated tada">Thank you!</h1>
-    	<p>You have successfully helped Stir to fund a project</p>
+    	<p>You have successfully helped Stir support a project</p>
         <div class="clearfix"></div><br><br>
         <div id="sub-message-thanks-page" class="container animated fadeIn">
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
